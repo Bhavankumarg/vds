@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import { GoPlay } from "react-icons/go";
 import Image from "next/image";
 
+
 const timeline = [
   {
     id: 1,

@@ -112,3 +112,49 @@ body  {
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
 }
+
+/* html {
+  box-sizing: border-box;/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #171414;
+}
+
+.image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+ 
+@media screen and (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row .image {
+    flex-basis: auto;
+  }
+} */

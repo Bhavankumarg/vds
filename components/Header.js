@@ -1,20 +1,25 @@
 "use client";
 import { initFlowbite } from "flowbite";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import AOS from "aos";
 import React from "react";
 const Header = () => {
-    useEffect(() => {
-      initFlowbite();
-      AOS.init({
-        // Initialize AOS with your desired configuration options
-        //   duration: 800, // Duration of the animation
-        //   easing: "ease-in-out", // Easing option
-        once: false, // Whether animation should only happen once
-      });
-    }, []);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  useEffect(() => {
+    initFlowbite();
+    AOS.init({
+      // Initialize AOS with your desired configuration options
+      //   duration: 800, // Duration of the animation
+      //   easing: "ease-in-out", // Easing option
+      once: false, // Whether animation should only happen once
+    });
+  }, []);
+  const handleLinkClick = () => {
+    setDrawerOpen(false); // Close the drawer when a link is clicked
+  };
+
   return (
     <>
       <nav class="bg-[#033B5F] drop-shadow-lg" data-aos="fade-up">
@@ -52,8 +57,9 @@ const Header = () => {
 
       <div class="fixed  top-7 right-5  ">
         <button
-          className="px-5 py-2.5 mb-2 mt-2 transition ease-in-out hover:scale-110 hover:-translate-y-1"
+          className="px-5 py-2.5 mb-2 mt-2  hover:-translate-y-1"
           type="button"
+          onClick={() => setDrawerOpen(!drawerOpen)}
           data-drawer-target="drawer-right-example"
           data-drawer-show="drawer-right-example"
           data-drawer-placement="right"
@@ -65,12 +71,12 @@ const Header = () => {
 
       <div
         id="drawer-right-example"
-        className="bg-[#033B5F] fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full w-80 dark:bg-gray-800"
-        tabindex="-1"
-        aria-labelledby="drawer-right-label"
+        className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${
+          drawerOpen ? "translate-x-0" : "translate-x-full"
+        } w-80 dark:bg-gray-800`}
+        tabIndex="-1"
       >
         <button
-        
           type="button"
           data-drawer-hide="drawer-right-example"
           aria-controls="drawer-right-example"
@@ -94,12 +100,104 @@ const Header = () => {
           <span className="sr-only">Close menu</span>
         </button>
 
-        <div className="py-4 h-ful merriweather-regular text-xl">
+        <div
+          className={`fixed inset-0 ${drawerOpen ? "" : "hidden"}`}
+          onClick={() => setDrawerOpen(false)}
+        >
+          <div className="absolute inset-0 bg-black opacity-25"></div>
+          <div className="absolute right- h-full w-80 p-4 overflow-y-auto merriweather-regular text-xl">
+            <ul className="space-y-3 font-medium text-white">
+              <li onClick={handleLinkClick} className="border-b">
+                <Link
+                  href="/"
+                  className="flex items-center py-5 mt-10 rounded-lg"
+                >
+                  <span className="ms-3 ">Home</span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="/my-journey"
+                  className="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="ms-3">My Journey</span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="/sincerely-me"
+                  class="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    Sincerely, Me
+                  </span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="/my-constituency"
+                  class="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    My Constituency
+                  </span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="/in-my-book-shelf"
+                  class="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    In My Book Shelf
+                  </span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="/press-releases"
+                  class="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    Press Releases
+                  </span>
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  href="newsletters"
+                  class="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    Newsletters
+                  </span>
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  href="/get-in-touch"
+                  className="flex items-center py-5  rounded-lg  "
+                >
+                  <span className="flex-1 ms-3">
+                    Get in Touch
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default Header;
+
+{/* <div className="py-4 h-ful merriweather-regular text-xl">
           <ul class="space-y-3 font-medium text-white">
             <li className="border-b">
               <Link
                 href="/"
-                className="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                className="flex items-center py-5  rounded-lg  "
               >
                 <span className="ms-3">Home</span>
               </Link>
@@ -108,7 +206,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="/my-journey"
-                className="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                className="flex items-center py-5  rounded-lg  "
               >
                 <span className="ms-3">My Journey</span>
               </Link>
@@ -116,7 +214,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="/sincerely-me"
-                class="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                class="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Sincerely, Me
@@ -126,7 +224,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="/my-constituency"
-                class="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                class="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   My Constituency
@@ -136,7 +234,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="/in-my-book-shelf"
-                class="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                class="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   In My Book Shelf
@@ -146,7 +244,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="/press-releases"
-                class="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                class="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Press Releases
@@ -156,7 +254,7 @@ const Header = () => {
             <li className="border-b">
               <Link
                 href="newsletters"
-                class="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                class="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Newsletters
@@ -166,7 +264,7 @@ const Header = () => {
             <li className="">
               <Link
                 href="/get-in-touch"
-                className="flex items-center py-5  rounded-lg   dark:hover:bg-gray-700 group"
+                className="flex items-center py-5  rounded-lg  "
               >
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Get in Touch
@@ -174,9 +272,4 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </div>
-      </div>
-    </>
-  );
-};
-export default Header;
+        </div> */}

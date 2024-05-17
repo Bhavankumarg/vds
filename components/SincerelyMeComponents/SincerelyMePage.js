@@ -3,7 +3,7 @@ import Image from "next/image";
 const SincerelyMe = () => {
   return (
     <>
-      <div className="bg-[#EFEFEF]">
+      <div className="bg-[#EFEFEF] merriweather-bold text-2xl">
         <div className="lg:flex">
           <div className="">
             <h4 className="mx-auto lg:p-5 lg:text-start text-center">
