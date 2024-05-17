@@ -8,7 +8,7 @@ const Journey = () => {
         <div className="border-r-2 border-slate-500 text-xl">
           <img
             className=" flex justify-center"
-            src="/sincere_images/quote-up.svg"
+            src="/sincere_images/quote_up.svg"
           />
           <h6 className=" font-bold lg:w-32 mt-4">
             {" "}
@@ -20,12 +20,12 @@ const Journey = () => {
           </h6>
           <div className="flex-col">
               <div className="flex justify-end ">
-                <img className="p-3" src="/sincere_images/quote-down.svg" />
+                <img className="p-3" src="/sincere_images/quote_down.svg" />
               </div>
               <div className="justify-center flex">
                 <img className="" src="/sincere_images/si-3.png" />
               </div>
-              <img className="mt-4 mb-4" src="/sincere_images/quote-up.svg" />
+              <img className="mt-4 mb-4" src="/sincere_images/quote_up.svg" />
             </div>
 
           <h6 className=" font-bold lg:w-32">
@@ -36,12 +36,12 @@ const Journey = () => {
           </h6>
           <div className="flex-col">
               <div className="flex justify-end ">
-                <img className="p-3" src="/sincere_images/quote-down.svg" />
+                <img className="p-3" src="/sincere_images/quote_down.svg" />
               </div>
               <div className="justify-center flex">
                 <img className="" src="/sincere_images/si-4.png" />
               </div>
-              <img className="mt-5" src="/sincere_images/quote-up.svg" />
+              <img className="mt-5" src="/sincere_images/quote_up.svg" />
             </div>
         </div>
 
