@@ -21,7 +21,7 @@ const SincerelyMe = () => {
                 width={300}
                 height={140}
                 className="w-96"
-                src="/sincere_images/Nettor-Kerala.png"
+                src="/sincere_images/Nettor_Kerala.png"
               />
             </div>
           </div>
@@ -33,7 +33,7 @@ const SincerelyMe = () => {
               width={150}
               height={100}
               className="w-96 p-0"
-              src="/sincere_images/si-1.png"
+              src="/sincere_images/si_1.png"
             />
             <h6 className="bg-[#9D9D9D] gap-0 text-white lg:p-10 p-5 text-lg lg:w-72">
               “We need to strike a balance between sustainable development and
@@ -50,7 +50,7 @@ const SincerelyMe = () => {
               width={250}
               height={150}
               className="hidden lg:block top-0 mt-52 p-5 bottom-0 right-0 absolute me-20"
-              src="/sincere_images/si-2.png"
+              src="/sincere_images/si_2.png"
             />
           </div>
         </div>
