@@ -67,7 +67,7 @@ const MyConsistencyPage = () => {
             </div>
           </div>
           <div className="w-[100%] lg:me-10 p-0">
-            <Image width={472} height={380} src="/my_constituency/about-paravur.png" />
+            <Image width={472} height={380} src="/my_constituency/About_paravur.png" />
           </div>
         </div>
       </div>
