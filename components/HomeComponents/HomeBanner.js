@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-// import { GoPlay } from "react-icons/go";
+import { GoPlay } from "react-icons/go";
 import Image from "next/image";
 
 
@@ -96,7 +96,7 @@ const HomeBanner = () => {
           {/* <Image className="bg-center h-[70vh] bg-no-repeat bg-cover bg-[url('/home_images/home_banner.png')] bg-gray-300 bg-blend-multiply lg:h-[74vh] relative mx-auto"
         /> */}
           <div className="flex justify-center items-center absolute inset-0">
-            {/* <GoPlay className="size-28 text-white cursor-pointer" /> */}
+            <GoPlay className="size-28 text-white cursor-pointer" />
           </div>
         </div>
       )}
