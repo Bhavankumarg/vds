@@ -1,9 +1,20 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import FooterForm from "../components/Forms/FooterForm";
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
+
 const Footer = () => {
+
+  const pathname = usePathname();
+
+  if (pathname === '/get-in-touch') {
+    return null;
+  }
+
+
   return (
     <>
       <div>

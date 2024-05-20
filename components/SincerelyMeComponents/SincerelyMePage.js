@@ -47,8 +47,8 @@ const SincerelyMe = () => {
               </h6>
             </div>
             <Image
-              width={250}
-              height={150}
+              width={280}
+              height={100}
               className="hidden lg:block top-0 mt-52 p-5 bottom-0 right-0 absolute me-20"
               src="/sincere_images/si_2.png"
             />

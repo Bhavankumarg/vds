@@ -1,12 +1,12 @@
 import React from "react";
-
+import Image from "next/image";
 const Journey = () => {
   return (
     <>
     <div className="bg-[#EFEFEF] lg:p-5 lg:flex merriweather-regular">
         {/* Left Side Content Start */}
         <div className="border-r-2 border-slate-500 text-xl">
-          <img
+          <Image  width={80}  height={50}
             className=" flex justify-center"
             src="/sincere_images/quote_up.svg"
           />
@@ -20,12 +20,12 @@ const Journey = () => {
           </h6>
           <div className="flex-col">
               <div className="flex justify-end ">
-                <img className="p-3" src="/sincere_images/quote_down.svg" />
+                <Image width={100}  height={50} className="p-3" src="/sincere_images/quote_down.svg" />
               </div>
               <div className="justify-center flex">
-                <img className="" src="/sincere_images/si-3.png" />
+                <img className="" src="/sincere_images/si_3.png" />
               </div>
-              <img className="mt-4 mb-4" src="/sincere_images/quote_up.svg" />
+              <Image  width={80}  height={50} className="mt-4 mb-4" src="/sincere_images/quote_up.svg" />
             </div>
 
           <h6 className=" font-bold lg:w-32">
@@ -36,12 +36,12 @@ const Journey = () => {
           </h6>
           <div className="flex-col">
               <div className="flex justify-end ">
-                <img className="p-3" src="/sincere_images/quote_down.svg" />
+                <Image  width={100}  height={50} className="p-3" src="/sincere_images/quote_down.svg" />
               </div>
               <div className="justify-center flex">
-                <img className="" src="/sincere_images/si-4.png" />
+                <Image  width={100}  height={50} className="" src="/sincere_images/si_4.png" />
               </div>
-              <img className="mt-5" src="/sincere_images/quote_up.svg" />
+              <Image  width={80}  height={50} className="mt-5" src="/sincere_images/quote_up.svg" />
             </div>
         </div>
 
@@ -74,12 +74,12 @@ const Journey = () => {
                 </p>
               </div>
               <div className="lg:flex lg:w-96">
-                <img src="/sincere_images/family.png" />
+                <Image  width={600}  height={300} src="/sincere_images/family.png" />
               </div>
             </div>
           </div>
           <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4 text-xl">
-            <img src="/sincere_images/thiruvanadhapuram-vds-speech.png" />
+            <Image  width={600}  height={300} src="/sincere_images/thiruvanadhapuram-vds-speech.png" />
             <div className="lg:p-5 p-2">
               <p>
                 <b>Thiruvananthapuram:</b> I stepped into students’ politics
@@ -135,17 +135,20 @@ const Journey = () => {
             conservation, driving me to actively contribute towards protecting
             our natural world through my services.
           </p>
-          <img className="w-full" src="sincere_images/bg_gray.svg" />
+          <div>
+          <Image  width={700}  height={400} className="w-full" src="/sincere_images/bg_gray.svg" />
           <div className="relative">
             <p className="bg-[#173A5B] lg:ms-4 text-white p-9 text-xl">
               In addition to my work in politics, I have also served as
               president of various trade unions, including:
             </p>
-            <img
+            <Image  width={300}  height={200}
               className="absolute right-0 bottom-0 "
-              src="sincere_images/vds_casual.png"
+              src="/sincere_images/vds_casual.png"
             />
           </div>
+          </div>
+          
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
               <ul className="list-disc p-4">
@@ -202,9 +205,9 @@ const Journey = () => {
                   are heard, and I feel grateful to have received recognition
                   for my work from various sources.
                 </p>
-                <img
+                <Image  width={350}  height={100}
                   className="absolute right-0 bottom-0 h-96 hidden lg:block me-3"
-                  src="sincere_images/award_and_record-.png"
+                  src="/sincere_images/award_and_record_.png"
                 />
               </div>
               <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
