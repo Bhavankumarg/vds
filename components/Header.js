@@ -57,7 +57,7 @@ const Header = () => {
 
       <div class="fixed  top-7 right-5  ">
         <button
-          className="px-5 py-2.5 mb-2 mt-2  hover:-translate-y-1"
+          className="px-5 py-2.5 mb-2 mt-2"
           type="button"
           onClick={() => setDrawerOpen(!drawerOpen)}
           data-drawer-target="drawer-right-example"

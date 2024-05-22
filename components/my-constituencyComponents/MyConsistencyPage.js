@@ -1,7 +1,15 @@
+'use client'
 import React from "react";
 import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const MyConsistencyPage = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
 
@@ -9,7 +17,7 @@ const MyConsistencyPage = () => {
         <h3 className="text-[#035C96] text-5xl text-center lg:p-20 mt-20">
           My Constituency
         </h3>
-        <div className="lg:flex text-xl">
+        <div  data-aos="fade-down-right" data-aos-duration="800" className="lg:flex text-xl">
           <div>
             <p className="lg:w-9/12 lg:ms-10 ms-2 ">
               North Paravur is an area with a rich and vibrant history. Paravur
@@ -67,7 +75,7 @@ const MyConsistencyPage = () => {
             </div>
           </div>
           <div className="w-[100%] lg:me-10 p-0">
-            <Image width={472} height={380} src="/my_constituency/About_paravur.png" />
+            <Image data-aos="fade-down-left"data-aos-duration="800"  width={472} height={380} src="/my_constituency/About_paravur.png" />
           </div>
         </div>
       </div>

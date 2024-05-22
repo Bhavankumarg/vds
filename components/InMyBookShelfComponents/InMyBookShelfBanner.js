@@ -3,7 +3,7 @@ import React from 'react';
 const InMyBookShelfBanner = () => {
     return (
         <>
-           <div>
+           <div data-aos="fade-down">
         <iframe
           className="w-full lg:h-lvh"
           src="https://www.youtube.com/embed/Gi0JwySUjGY"

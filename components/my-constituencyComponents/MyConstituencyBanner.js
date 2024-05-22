@@ -1,18 +1,26 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 import { GoPlay } from "react-icons/go";
 
 const HomeBanner = () => {
+  useEffect(() => {
+    initFlowbite();
+    AOS.init({
+      once: false,
+    });
+  }, []);
   const [showVideo, setShowVideo] = useState(false);
 
   const handleImageClick = () => {
     setShowVideo(true);
   };
+ 
 
   return (
     <>
       {!showVideo && (
-        <div className="flex relative" onClick={handleImageClick}>
+        <div className="flex relative" onClick={handleImageClick} data-aos="fade-up">
           <img
             className="w-full h-700 cursor-pointer"
             src="/my_constituency/group.png/"

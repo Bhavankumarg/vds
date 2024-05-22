@@ -1,48 +1,55 @@
+'use client'
 import React from "react";
 import Image from "next/image";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 const Journey = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
-    <div className="bg-[#EFEFEF] lg:p-5 lg:flex merriweather-regular">
+      <div className="bg-[#EFEFEF] lg:p-5 lg:flex merriweather-regular">
         {/* Left Side Content Start */}
         <div className="border-r-2 border-slate-500 text-xl">
-          <Image  width={80}  height={50}
+          <Image width={80} height={50}
             className=" flex justify-center"
             src="/sincere_images/quote_up.svg"
           />
-          <h6 className=" font-bold lg:w-32 mt-4">
+          <h6 className=" font-bold lg:w-32 mt-4 lg:p-0 p-3">
             {" "}
             “As a Leader of Opposition, the diligent research and homework that
             he puts into all of the topics that he talks about is commendable”{" "}
           </h6>
-          <h6 className=" font-bold lg:w-32 mt-4">
+          <h6 className=" font-bold lg:w-32 mt-4 lg:p-0 p-3">
             – M.B. Rajesh, Speaker of Kerala
           </h6>
           <div className="flex-col">
-              <div className="flex justify-end ">
-                <Image width={100}  height={50} className="p-3" src="/sincere_images/quote_down.svg" />
-              </div>
-              <div className="justify-center flex">
-                <img className="" src="/sincere_images/si_3.png" />
-              </div>
-              <Image  width={80}  height={50} className="mt-4 mb-4" src="/sincere_images/quote_up.svg" />
+            <div className="flex justify-end ">
+              <Image width={100} height={50} className="p-3" src="/sincere_images/quote_down.svg" />
             </div>
+            <div className="justify-center flex">
+              <img className="" src="/sincere_images/si_3.png" />
+            </div>
+            <Image width={80} height={50} className="mt-4 mb-4" src="/sincere_images/quote_up.svg" />
+          </div>
 
-          <h6 className=" font-bold lg:w-32">
+          <h6 className=" font-bold lg:w-32 lg:p-0 p-3">
             Currently, I am honoured to hold important positions such as the
             Leader of Opposition, Kerala Legislative Assembly, and the UDF
             Chairman, Kerala. I am also a member of the Political Affairs
             Committee, Congress, Kerala.
           </h6>
           <div className="flex-col">
-              <div className="flex justify-end ">
-                <Image  width={100}  height={50} className="p-3" src="/sincere_images/quote_down.svg" />
-              </div>
-              <div className="justify-center flex">
-                <Image  width={100}  height={50} className="" src="/sincere_images/si_4.png" />
-              </div>
-              <Image  width={80}  height={50} className="mt-5" src="/sincere_images/quote_up.svg" />
+            <div className="flex justify-end ">
+              <Image width={100} height={50} className="p-3" src="/sincere_images/quote_down.svg" />
             </div>
+            <div className="justify-center flex">
+              <Image width={100} height={50} className="" src="/sincere_images/si_4.png" />
+            </div>
+            <Image width={80} height={50} className="mt-5" src="/sincere_images/quote_up.svg" />
+          </div>
         </div>
 
         {/* Left Side Content End */}
@@ -54,7 +61,7 @@ const Journey = () => {
           <h6 className="text-2xl p-4">A brief history of my life</h6>
 
           <div className="lg:flex w-full text-xl">
-            <p className="p-4 lg:w-4/6">
+            <p className="p-4 lg:w-4/6" data-aos="fade-right" data-aos-duration="800">
               <span className="font-bold">Nettoor:</span> I was born on May 31,
               1964 to my parents, K Damodara Menon and Smt. V Vilasini Amma in
               Nettoor, Eranakulam. Growing up in a middle-class household as one
@@ -66,7 +73,7 @@ const Journey = () => {
               Master’s in Social Work (MSW) from Rajagiri College of Social
               Sciences.
             </p>
-            <div className="border-b-8 border-[#525252] lg:flex">
+            <div className="border-b-8 border-[#525252] lg:flex" data-aos="fade-left" >
               <div className="bg-[#818181] text-white p-5 W-11">
                 <p className="lg:w-52">
                   With my wife, Lakshmipriya and my daughter, Unnimaya, my
@@ -74,13 +81,13 @@ const Journey = () => {
                 </p>
               </div>
               <div className="lg:flex lg:w-96">
-                <Image  width={600}  height={300} src="/sincere_images/family.png" />
+                <Image width={600} height={300} src="/sincere_images/family.png" />
               </div>
             </div>
           </div>
           <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4 text-xl">
-            <Image  width={600}  height={300} src="/sincere_images/thiruvanadhapuram-vds-speech.png" />
-            <div className="lg:p-5 p-2">
+            <Image width={600} height={300} src="/sincere_images/thiruvanadhapuram-vds-speech.png" data-aos="fade-right" data-aos-duration="800" />
+            <div className="lg:p-5 p-2"data-aos="fade-left" data-aos-duration="800" >
               <p>
                 <b>Thiruvananthapuram:</b> I stepped into students’ politics
                 during my undergraduate days, and my aspiration to keep serving
@@ -96,7 +103,7 @@ const Journey = () => {
           {/* Work So Far Start */}
           <h3 className="text-4xl ms-4 mt-8">My Work So Far</h3>
           <div className="lg:flex p-4 gap-2 text-xl">
-            <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12">
+            <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12" data-aos="fade-right" data-aos-duration="800">
               As a politician, I have always been passionate about serving the
               people, and I have been fortunate to hold various positions that
               have allowed me to do so. In my previous organisational positions,
@@ -107,7 +114,7 @@ const Journey = () => {
               Legislative Party in Kerala. Furthermore, I served as the Vice
               President of the Kerala Pradesh Congress Committee.
             </p>
-            <p className="lg:w-6/12">
+            <p className="lg:w-6/12" data-aos="fade-left" data-aos-duration="800">
               As a five-time Member of the Kerala Legislative Assembly, my
               unwavering commitment has always been to represent the people.
               During my tenure, I have served as a valuable member of the UDF
@@ -122,7 +129,7 @@ const Journey = () => {
 
           {/* My Interests Start */}
           <h3 className="text-4xl ms-4 mt-5">My Interests</h3>
-          <p className="p-4 lg:w-9/12 text-xl">
+          <p className="p-4 lg:w-9/12 text-xl" data-aos="zoom-in" data-aos-duration="800">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
             first to blossom, and as I grew older, my curiosity was piqued by
@@ -136,22 +143,25 @@ const Journey = () => {
             our natural world through my services.
           </p>
           <div>
-          <Image  width={700}  height={400} className="w-full" src="/sincere_images/bg_gray.svg" />
-          <div className="relative">
-            <p className="bg-[#173A5B] lg:ms-4 text-white p-9 text-xl">
-              In addition to my work in politics, I have also served as
-              president of various trade unions, including:
-            </p>
-            <Image  width={300}  height={200}
-              className="absolute right-0 bottom-0 "
-              src="/sincere_images/vds_casual.png"
-            />
+            <Image data-aos="zoom-in-right" width={700} height={400} className="w-full" src="/sincere_images/bg_gray.svg" />
+            <div className="relative">
+              <p className="bg-[#173A5B] lg:ms-4 text-white p-9 text-xl">
+                In addition to my work in politics, I have also served as
+                president of various trade unions, including:
+              </p>
+              <Image data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" 
+                data-aos-duration="500"
+                width={300} height={200}
+                className="absolute right-0 bottom-0 "
+                src="/sincere_images/vds_casual.png"
+              />
+            </div>
           </div>
-          </div>
-          
+
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
-              <ul className="list-disc p-4">
+              <ul className="list-disc p-4" data-aos="fade-right" data-aos-duration="800">
                 <li>Cochin Refineries Employees Association</li>
                 <li>Premier Tyres Workers Union </li>
                 <li>TCC Employees Union</li>
@@ -169,7 +179,7 @@ const Journey = () => {
             </h6>
             <div className="lg:ms-20 p-4">
               <h6>
-                <ul className="list-disc">
+                <ul className="list-disc" data-aos="fade-left" data-aos-duration="800">
                   <li>HMT Employees Union, Kalamassery </li>
                   <li> KMML Employees Union, Kollam</li>
                   <li> CIAL Officers Association, Nedumbassery</li>
@@ -197,20 +207,20 @@ const Journey = () => {
 
           <div className="lg:ms-4">
             <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
-              <div className="relative bg-[#173A5B] text-xl">
-                <p className=" text-white lg:p-24 p-5 lg:w-9/12">
+              <div className="relative bg-[#173A5B] text-xl"> 
+                <p className=" text-white lg:p-24 p-5 lg:w-9/12"  data-aos="fade-in" data-aos-duration="800">
                   My passion for serving the people as a politician has been
                   unwavering for the last 20 years. Throughout this time, I have
                   been dedicated to making sure that the voices of the people
                   are heard, and I feel grateful to have received recognition
                   for my work from various sources.
                 </p>
-                <Image  width={350}  height={100}
+                <Image width={350} height={100}
                   className="absolute right-0 bottom-0 h-96 hidden lg:block me-3"
                   src="/sincere_images/award_and_record_.png"
                 />
               </div>
-              <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
+              <div className="lg:flex lg:p-3 lg:ms-10 text-xl" data-aos="fade-in" data-aos-duration="800">
                 <h6>
                   <ul className="list-disc lg:p-4 ms-8">
                     <li> AA Rahim Memorial Award for Best Parliamentarian</li>
