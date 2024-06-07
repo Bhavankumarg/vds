@@ -26,7 +26,7 @@ const SincerelyMe = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="mx-auto p-5">
           <div className="border-t-8 border-red-900 lg:flex">
             <Image

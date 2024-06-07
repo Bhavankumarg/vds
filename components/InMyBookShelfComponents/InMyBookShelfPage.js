@@ -53,30 +53,21 @@ const InMyBookShelfPage = () => {
       </div>
       <div className="container lg:flex mx-auto lg:p-20">
         <div className="w-full">
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-1.png" />
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_4.png" />
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_7.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-1.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_4.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_7.png" />
         </div>
         <div className="w-full ">
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-2.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-2.png" />
 
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_5.png" />
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_8.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_5.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_8.png" />
         </div>
         <div className="w-full">
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-3.png" />
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_6.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book-3.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_6.png" />
 
-          <Image data-aos="fade-up"
-            data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_9.png" />
+          <Image data-aos="fade-up" data-aos-duration="800" width={450} height={200} className="p-5" src="/in_my_book_shelf/book_9.png" />
         </div>
       </div>
     </>

@@ -61,7 +61,7 @@ const Journey = () => {
           <h6 className="text-2xl p-4">A brief history of my life</h6>
 
           <div className="lg:flex w-full text-xl">
-            <p className="p-4 lg:w-4/6" data-aos="fade-right" data-aos-duration="800">
+            <p className="p-4 lg:w-4/6" data-aos="fade-in" data-aos-duration="800">
               <span className="font-bold">Nettoor:</span> I was born on May 31,
               1964 to my parents, K Damodara Menon and Smt. V Vilasini Amma in
               Nettoor, Eranakulam. Growing up in a middle-class household as one
@@ -73,7 +73,7 @@ const Journey = () => {
               Master’s in Social Work (MSW) from Rajagiri College of Social
               Sciences.
             </p>
-            <div className="border-b-8 border-[#525252] lg:flex" data-aos="fade-left" >
+            <div className="border-b-8 border-[#525252] lg:flex" data-aos="fade-in" >
               <div className="bg-[#818181] text-white p-5 W-11">
                 <p className="lg:w-52">
                   With my wife, Lakshmipriya and my daughter, Unnimaya, my
@@ -86,8 +86,8 @@ const Journey = () => {
             </div>
           </div>
           <div className="lg:flex p-3 border-4 mt-5 border-gray-500 lg:ms-4 text-xl">
-            <Image width={600} height={300} src="/sincere_images/thiruvanadhapuram-vds-speech.png" data-aos="fade-right" data-aos-duration="800" />
-            <div className="lg:p-5 p-2"data-aos="fade-left" data-aos-duration="800" >
+            <Image width={600} height={300} src="/sincere_images/thiruvanadhapuram-vds-speech.png" data-aos="fade-in" data-aos-duration="800" />
+            <div className="lg:p-5 p-2"data-aos="fade-in" data-aos-duration="800" >
               <p>
                 <b>Thiruvananthapuram:</b> I stepped into students’ politics
                 during my undergraduate days, and my aspiration to keep serving
@@ -103,7 +103,7 @@ const Journey = () => {
           {/* Work So Far Start */}
           <h3 className="text-4xl ms-4 mt-8">My Work So Far</h3>
           <div className="lg:flex p-4 gap-2 text-xl">
-            <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12" data-aos="fade-right" data-aos-duration="800">
+            <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12" data-aos="fade-in" data-aos-duration="800">
               As a politician, I have always been passionate about serving the
               people, and I have been fortunate to hold various positions that
               have allowed me to do so. In my previous organisational positions,
@@ -114,7 +114,7 @@ const Journey = () => {
               Legislative Party in Kerala. Furthermore, I served as the Vice
               President of the Kerala Pradesh Congress Committee.
             </p>
-            <p className="lg:w-6/12" data-aos="fade-left" data-aos-duration="800">
+            <p className="lg:w-6/12" data-aos="fade-in" data-aos-duration="800">
               As a five-time Member of the Kerala Legislative Assembly, my
               unwavering commitment has always been to represent the people.
               During my tenure, I have served as a valuable member of the UDF
@@ -129,7 +129,7 @@ const Journey = () => {
 
           {/* My Interests Start */}
           <h3 className="text-4xl ms-4 mt-5">My Interests</h3>
-          <p className="p-4 lg:w-9/12 text-xl" data-aos="zoom-in" data-aos-duration="800">
+          <p className="p-4 lg:w-9/12 text-xl" data-aos="fade-in" data-aos-duration="800">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
             first to blossom, and as I grew older, my curiosity was piqued by
@@ -161,7 +161,7 @@ const Journey = () => {
 
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
-              <ul className="list-disc p-4" data-aos="fade-right" data-aos-duration="800">
+              <ul className="list-disc p-4" data-aos="fade-in" data-aos-duration="800">
                 <li>Cochin Refineries Employees Association</li>
                 <li>Premier Tyres Workers Union </li>
                 <li>TCC Employees Union</li>
@@ -179,7 +179,7 @@ const Journey = () => {
             </h6>
             <div className="lg:ms-20 p-4">
               <h6>
-                <ul className="list-disc" data-aos="fade-left" data-aos-duration="800">
+                <ul className="list-disc" data-aos="fade-in" data-aos-duration="800">
                   <li>HMT Employees Union, Kalamassery </li>
                   <li> KMML Employees Union, Kollam</li>
                   <li> CIAL Officers Association, Nedumbassery</li>
