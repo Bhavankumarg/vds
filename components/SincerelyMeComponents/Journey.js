@@ -52,6 +52,8 @@ const Journey = () => {
           </div>
         </div>
 
+        
+
         {/* Left Side Content End */}
 
         <div className="lg:flex-1 w-dvw ">
@@ -149,9 +151,7 @@ const Journey = () => {
                 In addition to my work in politics, I have also served as
                 president of various trade unions, including:
               </p>
-              <Image data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" 
-                data-aos-duration="500"
+              <Image 
                 width={300} height={200}
                 className="absolute right-0 bottom-0 "
                 src="/sincere_images/vds_casual.png"
@@ -161,7 +161,7 @@ const Journey = () => {
 
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
-              <ul className="list-disc p-4" data-aos="fade-in" data-aos-duration="800">
+              <ul className="list-disc p-4" data-aos="fade-in">
                 <li>Cochin Refineries Employees Association</li>
                 <li>Premier Tyres Workers Union </li>
                 <li>TCC Employees Union</li>
@@ -179,7 +179,7 @@ const Journey = () => {
             </h6>
             <div className="lg:ms-20 p-4">
               <h6>
-                <ul className="list-disc" data-aos="fade-in" data-aos-duration="800">
+                <ul className="list-disc" data-aos="fade-in">
                   <li>HMT Employees Union, Kalamassery </li>
                   <li> KMML Employees Union, Kollam</li>
                   <li> CIAL Officers Association, Nedumbassery</li>
@@ -208,7 +208,7 @@ const Journey = () => {
           <div className="lg:ms-4">
             <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
               <div className="relative bg-[#173A5B] text-xl"> 
-                <p className=" text-white lg:p-24 p-5 lg:w-9/12"  data-aos="fade-in" data-aos-duration="800">
+                <p className=" text-white lg:p-24 p-5 lg:w-9/12"  data-aos="fade-in">
                   My passion for serving the people as a politician has been
                   unwavering for the last 20 years. Throughout this time, I have
                   been dedicated to making sure that the voices of the people
@@ -220,7 +220,7 @@ const Journey = () => {
                   src="/sincere_images/award_and_record_.png"
                 />
               </div>
-              <div className="lg:flex lg:p-3 lg:ms-10 text-xl" data-aos="fade-in" data-aos-duration="800">
+              <div className="lg:flex lg:p-3 lg:ms-10 text-xl" data-aos="fade-in">
                 <h6>
                   <ul className="list-disc lg:p-4 ms-8">
                     <li> AA Rahim Memorial Award for Best Parliamentarian</li>
